@@ -22,8 +22,8 @@
 
 1. 克隆项目到本地：
    ```bash
-   git clone <项目仓库地址>
-   cd <项目目录>
+   git@github.com:sanm00/youtube_downloader.git
+   cd youtube_downloader
    ```
 
 2. 安装前端依赖：
