@@ -1,0 +1,4 @@
+*.log
+download_history.json
+frontend/node_modules/
+frontend/dist/
