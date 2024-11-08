@@ -3,12 +3,13 @@
     <div class="download-section">
       <div class="form-group">
         <textarea v-model="videoUrls" placeholder="输入多个视频链接，每行一个"></textarea>
-        <button class="download-button" @click="downloadVideos">新建下载任务</button>
       </div>
+
+      <button class="margin-0 save-button" @click="downloadVideos">新建下载任务</button>
     </div>
 
     <div class="video-list">
-      <h4>下载任务队列</h4>
+      <h4 class="title-4">下载队列</h4>
       <DownloadProgress v-for="video in activeDownloads" :key="video.id" :video="video" />
     </div>
   </div>
@@ -75,6 +76,14 @@ export default {
   margin: 10px 0;
 }
 
+.margin-0 {
+  margin: 0;
+}
+
+.title-4 {
+  border-bottom: 1px solid #ccc;
+}
+
 textarea {
   width: 100%;
   height: 100px; /* 设置文本框高度 */
@@ -82,5 +91,6 @@ textarea {
   border-radius: 4px;
   border: 1px solid #ccc;
   resize: none; /* 禁止调整大小 */
+  box-sizing: border-box;
 }
 </style> 
